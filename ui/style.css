@@ -19,4 +19,7 @@ body {
 .img-medium {
     height: 200px;
 }
-
+.main{
+	margin:200px;
+	color:#6b383a;
+}
