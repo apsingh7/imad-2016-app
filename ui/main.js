@@ -7,7 +7,7 @@ document.getElementById('counter').onclick=function()
 span.innerHTML=counter.toString();
 };
 
-};
+
 
 
 var nameInput=document.getElementById('name');
@@ -23,4 +23,5 @@ submit.onclick=function(){
 	}
 	var ul=document.getElementById('namelist');
 	ul.innerHTML=list;
+};
 };
