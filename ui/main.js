@@ -14,9 +14,10 @@ request.onreadystatechange = function()
 span.innerHTML=counter.toString();
 	}		
 	}
+};
 	//make the request
 	request.open('GET' ,'http://apsingh7.imad.hasura-app.io/counter',true );
 	request.send(null);
-};
+
 };
 };
