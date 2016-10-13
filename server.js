@@ -46,13 +46,17 @@ function createTemplate(data){
     var heading=data.heading;
     var content=data.content;
     var htmlTemplate=`<html>
+	 <link href="/ui/style.css" rel="stylesheet" />
+	 
     <head>
     <title>
         ${title}</title>
     </head>
     <body>
+	<div class="main">
     <div>
-    <a href="/">Home</a>
+    <a href="/" style="text-decoration:none;font-color:red;"><b>Home</b></a>
+	<hr></hr>
     </div>
         <div>
         ${heading}
@@ -63,6 +67,7 @@ function createTemplate(data){
         <div>
         ${content}
         </div>
+	</div>
     </body>
     </html>
     `;
