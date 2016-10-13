@@ -12,7 +12,7 @@ span.innerHTML=counter.toString();
 
 
 
-
+window.onload = function(){
 document.getElementById('submit').onclick=function(){
 
 	var request=new XMLHttpRequest();
@@ -40,4 +40,5 @@ var nameInput=document.getElementById('name');
 var name = nameInput.value;
 request.open('GET','http://apsingh7.imad.hasura-app.io/submit-name='+name,true);
 request.send(null);
+};
 };
