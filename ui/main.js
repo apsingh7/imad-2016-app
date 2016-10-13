@@ -6,7 +6,7 @@ document.getElementById('counter').onclick=function()
 	var span=document.getElementById('count');
 span.innerHTML=counter.toString();
 };
-};
+
 
 var nameInput=document.getElementById('name');
 //var name = nameInput.value;
@@ -21,4 +21,5 @@ submit.onclick=function(){
 	}
 	var ul=document.getElementById('namelist');
 	ul.innerHTML=list;
+};
 };
