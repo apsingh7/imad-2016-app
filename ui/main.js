@@ -1,19 +1,8 @@
-console.log('Loaded!');
-console.log('Loaded!');
-
-var element=document.getElementById('main-text');
-element.innerHTML="New Value";
-
-//Move the Image.
-
-var img=document.getElementById('modi');
-var marginLeft=0; 
-function moveRight()
+var button = document.getElementById('counter');
+var count=0;
+button.onclick=function()
 {
-	marginLeft=marginLeft+5;
-	img.style.marginLeft=marginLeft + 'px';
-}
-img.onclick=function(){
-	var interval=setInterval(moveRight,50);
-	
+	conter =counter+1;
+	var span=document.getElementById('count');
+span.innerHTML=counter.toString();
 };
