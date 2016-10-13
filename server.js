@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var articles = {
+    'article-one' :{
 	title: 'Article One | Ajay Pratap Singh',
 	date:'Sep 5,2016',
 	heading:'Article One',
@@ -17,6 +18,27 @@ var articleOne = {
 			<p>This is my First Article.This is my First Article.This is my First Article.This is my First Article.This is my First Article.This is my First Article.This is my First Article.This is my First Article.This is my First Article.
 			</p>`
 			
+},
+    'article-two' :{title: 'Article One | Ajay Pratap Singh',
+	date:'Sep 5,2016',
+	heading:'Article two',
+	content:`
+	<p>This is my second Article.This is my second Article.This is my second Article.This is my second Article.This is my second Article.This is my second Article.This is my second Article.This is my second Article.This is my second Article.
+			</p>
+			<p>This is my second Article.This is my second Article.This is my second Article.This is my second Article.This is my second Article.This is my second Article.This is my second Article.This is my second Article.This is my second Article.
+			</p>
+			<p>This is my second Article.This is my second Article.This is my second Article.This is my second Article.This is my second Article.This is my second Article.This is my second Article.This is my second Article.This is my second Article.
+			</p>` },
+    'article-three' : {title: 'Article Three | Ajay Pratap Singh',
+	date:'Sep 5,2016',
+	heading:'Article Three',
+	content:`
+	<p>This is my third Article.This is my third Article.This is my third Article.This is my third Article.This is my third Article.This is my third Article.This is my third Article.This is my third Article.This is my third Article.
+			</p>
+			<p>This is my third Article.This is my third Article.This is my third Article.This is my third Article.This is my third Article.This is my third Article.This is my third Article.This is my third Article.This is my third Article.
+			</p>
+			<p>This is my third Article.This is my third Article.This is my third Article.This is my third Article.This is my third Article.This is my third Article.This is my third Article.This is my third Article.This is my third Article.
+			</p>` }
 };
 function createTemplate(data){
     var title=data.title;
