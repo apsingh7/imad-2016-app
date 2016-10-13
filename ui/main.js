@@ -6,12 +6,14 @@ document.getElementById('counter').onclick=function()
 	var span=document.getElementById('count');
 span.innerHTML=counter.toString();
 };
+};
 
 
 
 
 var nameInput=document.getElementById('name');
 //var name = nameInput.value;
+window.onload = function(){
 var submit=document.getElementById('submit');
 submit.onclick=function(){
 	var names=['name1','name2','name3'];
