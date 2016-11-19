@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AJAY | AP SINGH</title>
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+<link href="cm.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 0px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 0px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+</style>
+
+
+
+</head>
+
+<body>
+
+<div class="header">
+	<div class="logo">
+	<a href="index.html"><img style="float:left;margin-left:50px; height:150px;width:110px"src="image/logo3.png"></a>
+	</div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sdfghj">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Gallary</a></li>
+                <li><a href="#">Contact &nbsp &nbsp &nbsp</a></li>
+            </ul>
+        </div>
+		<div style="height:50px;overflow-y: hidden;margin-right:100px;margin-top:20px" >
+
+
+
+<a href="https:///www.google.com">
+<img style=" float:right; margin-left:10px; display:inline" src="image/google.png" width="45" height="45"  /></a>
+<a href="https:///www.twitter.com"><img style=" float:right; margin-left:10px; display:inline" src="image/twit.png" width="45" height="45"  /></a>
+
+<a href="https:///www.facebook.com"><img style=" float:right; margin-left:10px;display:inline" src="image/fb.png" width="45" height="45"  /></a>
+
+
+</div>
+</div>
+
+<center><h1 style="color:#fff">GALLARY</h1></center>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="image/a.jpg" style="width:1000px;height:750px;">
+  <img class="mySlides" src="image/b.jpg" style="width:1000px;height:750px;">
+  <img class="mySlides" src="image/c.jpg" style="width:1000px;height:750px;">
+  <img class="mySlides" src="image/d.jpg" style="width:1000px;height:750px;">
+
+  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+
+</body>
+</html>
