@@ -1,0 +1,50 @@
+body { 
+    background-image: url("wall.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+
+
+}
+.header{
+	width:100%;
+	overflow:hidden;
+	margin-top:-5px;
+	display:inline-block;
+	float:left;
+
+}
+.logo{
+	width:150px;
+	height:150px;
+	float:left;
+
+}
+.nav {
+	position: relative;
+	width: 800px;
+	float:left;
+
+	text-align: center;
+	padding: 20px 0;
+	
+}
+
+.nav ul li {
+	display: inline-block;
+	margin-right: 60px;
+}
+.nav ul li:last-child {
+	margin-right: 0;
+}
+.nav ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: Arial, sans-serif;
+}
