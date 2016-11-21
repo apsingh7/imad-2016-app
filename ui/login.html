@@ -5,7 +5,7 @@
 <title>AJAY | AP SINGH</title>
 <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 <link href="ui/cm.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
 <style>
 ::-webkit-scrollbar {
     width: 10px;
@@ -63,36 +63,8 @@
 </div>
 </div>
 
-<center><h1 style="color:#fff">GALLARY</h1></center>
 
-<div class="w3-content w3-display-container">
-  <img class="mySlides" src="ui/a.jpg" style="width:1000px;height:750px;">
-  <img class="mySlides" src="ui/b.jpg" style="width:1000px;height:750px;">
-  <img class="mySlides" src="ui/c.jpg" style="width:1000px;height:750px;">
-  <img class="mySlides" src="ui/d.jpg" style="width:1000px;height:750px;">
 
-  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
-</div>
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-</script>
 
 
 </body>
