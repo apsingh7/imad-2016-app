@@ -164,7 +164,7 @@ app.get('/ui/men2.png', function (req, res) {
       res.sendFile(path.join(__dirname, 'ui', 'men2.png'));
 });
 app.get('/ui/vir2.png', function (req, res) {
-      res.sendFile(path.join(__dirname, 'ui', 'vir2.png'));
+      res.sendFile(path.join(__dirname, 'ui', 'venus2.png'));
 });
 app.get('/ui/venus2.png', function (req, res) {
       res.sendFile(path.join(__dirname, 'ui', 'venus2.png'));
