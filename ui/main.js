@@ -68,7 +68,7 @@ function loadLoginForm () {
 </div>
 
 <br><br><br><br><br><br>
-<form action="index.html" method="post">
+<form>
       
         <h1>Sign Up</h1>
         
