@@ -87,14 +87,14 @@ app.get('/hash/:input', function(req, res) {
 });
 
 app.post('/create-user', function (req, res) {
-   // username, password
-   // {"username": "tanmai", "password": "password"}
-   // JSON
+ 
+   var email = req.body.email;
    var username = req.body.username;
    var password = req.body.password;
+   
    var salt = crypto.randomBytes(128).toString('hex');
    var dbString = hash(password, salt);
-   pool.query('INSERT INTO "signup" (username, password) VALUES ($1, $2)', [username, dbString], function (err, result) {
+   pool.query('INSERT INTO "signup" (email,username, password) VALUES ($1,$2, $3)', [email,username, dbString], function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
@@ -104,15 +104,16 @@ app.post('/create-user', function (req, res) {
 });
 
 app.post('/login', function (req, res) {
+    var email = req.body.email;
    var username = req.body.username;
    var password = req.body.password;
    
-   pool.query('SELECT * FROM "signup" WHERE username = $1', [username], function (err, result) {
+   pool.query('SELECT * FROM "signup" WHERE email = $1', [email], function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
           if (result.rows.length === 0) {
-              res.status(403).send('username/password is invalid');
+              res.status(403).send('email/password is invalid');
           } else {
               // Match the password
               var dbString = result.rows[0].password;
