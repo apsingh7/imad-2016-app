@@ -69,7 +69,7 @@ function loadLoginForm () {
 
 <br><br><br><br><br><br>
 
-      
+      <form>
         <h1>Sign Up</h1>
         
         <fieldset>
@@ -93,7 +93,7 @@ function loadLoginForm () {
         
          <input type="submit" id="register_btn" value="Register" />
       
-
+</form>
 
 
 
