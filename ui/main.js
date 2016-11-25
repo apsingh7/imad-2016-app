@@ -69,7 +69,7 @@ function loadLoginForm () {
 
 <br><br><br><br><br><br>
 
-      <form method="post">
+      <form>
         <h1>Sign Up</h1>
         
         <fieldset>
