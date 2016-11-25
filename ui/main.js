@@ -2,7 +2,6 @@
 function loadLoginForm () {
     var loginHtml = `
         <h3>Login/Register to unlock awesome features</h3>
-        <input type="text" id="email" placeholder="email" />
         <input type="text" id="username" placeholder="username" />
         <input type="password" id="password" />
         <br/><br/>
@@ -38,14 +37,13 @@ function loadLoginForm () {
         };
         
         // Make the request
-        var email = document.getElementById('email').value;
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
         console.log(username);
         console.log(password);
         request.open('POST', '/login', true);
         request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({email: email , username: username, password: password}));  
+        request.send(JSON.stringify({username: username, password: password}));  
         submit.value = 'Logging in...';
         
     };
@@ -70,14 +68,13 @@ function loadLoginForm () {
         };
         
         // Make the request
-        var email = document.getElementById('email').value;
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
         console.log(username);
         console.log(password);
         request.open('POST', '/create-user', true);
         request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({email: email, username: username, password: password}));  
+        request.send(JSON.stringify({username: username, password: password}));  
         register.value = 'Registering...';
     
     };
