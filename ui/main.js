@@ -137,7 +137,7 @@ function loadLoginForm () {
           <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
         
         </fieldset>
-        <button type="submit">Sign Up</button>
+         <input type="submit" id="register_btn" value="Register" />
       </form>
 
 
