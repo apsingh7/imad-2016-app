@@ -232,6 +232,110 @@ app.get('/ui/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
 });
 
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+app.get('/index', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+app.get('/login', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login.html'));
+});
+app.get('/signup', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'signup.html'));
+});
+app.get('/gallary', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'gallary.html'));
+});
+app.get('/blog', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'blog.html'));
+});
+var counter=0;
+app.get('/counter',function(req,res){
+	counter= counter+1;
+	res.send(counter,toString()); 
+});
+app.get('/:articleName', function (req, res) {
+    var articleName = req.params.articleName;
+  res.send(createTemplate(articles[articleName]));
+});
+
+
+app.get('/ui/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+app.get('/ui/main.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.css'));
+});
+app.get('/ui/cm.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'cm.css'));
+});
+app.get('/ui/blog.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'blog.css'));
+});
+
+
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+
+app.get('/ui/logup.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'logup.png'));
+});
+app.get('/ui/login_icon.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login_icon.png'));
+});
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+});
+app.get('/ui/venus2.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'venus2.png'));
+});
+
+app.get('/ui/logo3.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'logo3.png'));
+});
+app.get('/ui/google.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'google.png'));
+});
+app.get('/ui/fb.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'fb.png'));
+});
+app.get('/ui/twit.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'twit.png'));
+});
+app.get('/ui/wall.jpg', function (req, res) {
+      res.sendFile(path.join(__dirname, 'ui', 'wall.jpg'));
+});app.get('/ui/a.jpg', function (req, res) {
+      res.sendFile(path.join(__dirname, 'ui', 'a.jpg'));
+});
+app.get('/ui/b.jpg', function (req, res) {
+      res.sendFile(path.join(__dirname, 'ui', 'b.jpg'));
+});
+app.get('/ui/c.jpg', function (req, res) {
+      res.sendFile(path.join(__dirname, 'ui', 'c.jpg'));
+});
+app.get('/ui/d.jpg', function (req, res) {
+      res.sendFile(path.join(__dirname, 'ui', 'd.jpg'));
+});
+app.get('/ui/men2.png', function (req, res) {
+      res.sendFile(path.join(__dirname, 'ui', 'men2.png'));
+});
+app.get('/ui/vir2.png', function (req, res) {
+      res.sendFile(path.join(__dirname, 'ui', 'venus2.png'));
+});
+app.get('/ui/venus2.png', function (req, res) {
+      res.sendFile(path.join(__dirname, 'ui', 'venus2.png'));
+});
+app.get('/ui/computer.png', function (req, res) {
+      res.sendFile(path.join(__dirname, 'ui', 'computer.png'));
+});
+app.get('/ui/bb.png', function (req, res) {
+      res.sendFile(path.join(__dirname, 'ui', 'bb.png'));
+});
+app.get('/ui/1.png', function (req, res) {
+      res.sendFile(path.join(__dirname, 'ui', '1.png'));
+});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
