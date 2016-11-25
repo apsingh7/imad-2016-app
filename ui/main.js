@@ -69,21 +69,21 @@ function loadLoginForm () {
 
 <br><br><br><br><br><br>
 
-      <form method="get">
+      <form method="post">
         <h1>Sign Up</h1>
         
         <fieldset>
           <legend><span class="number">1</span>Your basic info</legend>
           <label for="name">Name:</label>
-          <input type="text" id="username" name="user_name">
+          <input type="text" id="username" placeholder="username" />
           
           <label for="mail">Email:</label>
           <input type="email" id="mail" name="user_email">
           
-          
+         
           
           <label for="password">Password:</label>
-          <input type="password" id="password" name="user_password">
+          <input type="password" id="password"/>
           
           <label>Birth Day:</label>
               <input type="date" name="bday">
