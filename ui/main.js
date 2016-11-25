@@ -1,105 +1,12 @@
 
 function loadLoginForm () {
     var loginHtml = `
-        <!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>AJAY | AP SINGH</title>
-<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-
-<link href="ui/main.css" rel="stylesheet" type="text/css">
-
-<style>
-::-webkit-scrollbar {
-    width: 10px;
-}
- 
-
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    -webkit-border-radius: 10px;
-    border-radius: 0px;
-}
- 
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 0px;
-    background: rgba(255,0,0,0.8); 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
-::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(255,0,0,0.4); 
-}
-</style>
-
-
-
-</head>
-
-<body>
-
-<div class="header">
-	<div class="logo">
-	<a href="/index"><img style="float:left;margin-left:50px; height:150px;width:110px" src="ui/logo3.png"></a>
-	</div>
-        <div class="nav">
-            <ul>
-                <li><a href="/index">Home</a></li>
-                <li><a href="sdfghj">About</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="#">Gallary</a></li>
-                <li><a href="#">Contact &nbsp; &nbsp; &nbsp;</a></li>
-            </ul>
-        </div>
-		<div style="height:50px;overflow-y: hidden;margin-right:00px;margin-top:20px" >
-
-
-
-<a href="https:///www.google.com">
-<img style=" float:right; margin-left:10px; display:inline" src="ui/google.png" width="45" height="45"  /></a>
-<a href="https:///www.twitter.com"><img style=" float:right; margin-left:10px; display:inline" src="ui/twit.png" width="45" height="45"  /></a>
-
-<a href="https:///www.facebook.com"><img style=" float:right; margin-left:10px;display:inline" src="ui/fb.png" width="45" height="45"  /></a>
-
-<a href="/signup"><img style=" float:right; margin-left:10px;display:inline;margin-right:50px;" src="ui/logup.png" width="45" height="45"  /></a>
-<a href="/login"><img style=" float:right; margin-left:10px;display:inline; margin-right:10px;" src="ui/login_icon.png" width="45" height="45"  /></a>
-</div>
-</div>
-
-<br><br><br><br><br><br>
-
-      <form>
-        <h1>Sign Up</h1>
-        
-        <fieldset>
-          <legend><span class="number">1</span>Your basic info</legend>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="user_name">
-          
-          <label for="mail">Email:</label>
-          <input type="email" id="mail" name="user_email">
-          
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="user_password">
-          
-          <label>Birth Day:</label>
-              <input type="date" name="bday">
-
-        </fieldset>
-        
-        
-		
-        
-         <input type="submit" id="register_btn" value="Register" />
-      
-</form>
-
-
-
-</body>
-</html>
-
+        <h3>Login/Register to unlock awesome features</h3>
+        <input type="text" id="username" placeholder="username" />
+        <input type="password" id="password" />
+        <br/><br/>
+        <input type="submit" id="login_btn" value="Login" />
+        <input type="submit" id="register_btn" value="Register" />
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
