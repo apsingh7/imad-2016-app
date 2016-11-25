@@ -68,7 +68,7 @@ function loadLoginForm () {
 </div>
 
 <br><br><br><br><br><br>
-<form  method="post">
+
       
         <h1>Sign Up</h1>
         
@@ -138,7 +138,7 @@ function loadLoginForm () {
         
         </fieldset>
          <input type="submit" id="register_btn" value="Register" />
-      </form>
+      
 
 
 
