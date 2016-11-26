@@ -195,7 +195,7 @@ body {
 
 <a href="https://www.facebook.com/shreeramjairam"><img style=" float:right; margin-left:10px;display:inline" src="/ui/image/fb.png" width="45" height="45"  /></a>
 
-<a href="/login"><img style=" float:right; margin-left:10px;display:inline; margin-right:10px;" src="/ui/image/login_icon.png" width="45" height="45"  /></a>
+<a href="/signup"><img style=" float:right; margin-left:10px;display:inline; margin-right:10px;" src="/ui/image/logup.png" width="45" height="45"  /></a>
 
 
         
