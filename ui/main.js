@@ -70,7 +70,7 @@ function loadLoginForm () {
         // Create a request object
          var x = document.getElementById("username").value;
   var y = document.getElementById("password").value;
-  if(x == null || x == '') {
+  if(x == null || y == '') {
     alert("Hello! I am an alert box!!");
   }
         var request = new XMLHttpRequest();
