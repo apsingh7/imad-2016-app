@@ -4,10 +4,10 @@ function loadLoginForm () {
         <h3>Login/Register to unlock awesome features</h3>
         <input type="text" id="username" placeholder="username" />
         <input type="password" id="password" />
-        <br/><br/>
+        <br/><br/><div class="bb">
         <input type="submit" id="login_btn" value="Login"  onclick="return ValidateFields()"/>
         <input type="submit" id="register_btn" value="Register"  onclick="return ValidateFields()" />
-        
+        </div>
         <script>
         function ValidateFields() {
   var x = document.getElementById("username").value;
