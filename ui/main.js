@@ -70,9 +70,12 @@ function loadLoginForm () {
         // Create a request object
          var x = document.getElementById("username").value;
   var y = document.getElementById("password").value;
-  if(x == null || y == '') {
-    alert("Hello! I am an alert box!!");
+  if(x == '' || y == '') {
+    alert("Invalid");
   }
+  else
+  
+  {
         var request = new XMLHttpRequest();
         
         // Capture the response and store it in a variable
@@ -99,7 +102,7 @@ function loadLoginForm () {
         request.send(JSON.stringify({username: username, password: password}));  
         register.value = 'Registering...';
     
-    };
+    }};
 }
 
 function loadLoggedInUser (username) {
