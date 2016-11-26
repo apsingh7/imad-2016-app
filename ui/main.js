@@ -5,21 +5,11 @@ function loadLoginForm () {
         <input type="text" id="username" placeholder="username" />
         <input type="password" id="password" />
         <br/><br/><div class="bb">
-        <input type="submit" id="login_btn" value="Login"  onclick="return ValidateFields()"/>
-        <input type="submit" id="register_btn" value="Register"  onclick="return ValidateFields()" />
+        <input type="submit" id="login_btn" value="Login"  style="width=:50px;height:20px;padding:10px;color:red;"/>
+        <input type="submit" id="register_btn" value="Register"    style="width=:50px;height:20px;padding:10px;color:red;"/>
         </div>
         <script>
-        function ValidateFields() {
-  var x = document.getElementById("username").value;
-  var y = document.getElementById("password").value;
-  if(x == null || x == '') {
-    alert("Hello! I am an alert box!!");
-  }
-  if(y == null || y == '') {
-    $(".error-msg").animate({opacity: "1"}, 400);
-    return false;
-  }
-}
+       
 
         </script>
         
