@@ -1,0 +1,77 @@
+body { 
+    background-image: url("image/wall.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+
+
+}
+.header{
+	width:100%;
+	overflow:hidden;
+	margin-top:-5px;
+
+}
+.logo{
+	width:150px;
+	height:150px;
+	float:left;
+
+}
+.nav {
+	position: relative;
+	width: 800px;
+	margin-left:150px;
+
+	text-align: center;
+	padding: 20px 0;
+	
+}
+
+.nav ul li {
+	display: inline-block;
+	margin-right: 60px;
+}
+.nav ul li:last-child {
+	margin-right: 0;
+}
+.nav ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: Arial, sans-serif;
+}
+ .box
+{
+	
+	text-align: center;
+	padding-top: 120px;
+	height:auto;
+  
+}
+.main {
+	background-color: #fff;
+   display: inline-block;
+   padding: 40px;
+	vertical-align:top;
+	padding-top:5px;
+	margin-top: 25px;
+	transition: all .2s ease-in-out;
+	margin-right: 20px;
+	height:350px;
+
+	
+	
+}
+.main:hover{
+	transform: scale(1.1);
+}
+.txt
+{
+	display:block;
+}
