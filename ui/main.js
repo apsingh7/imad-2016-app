@@ -5,8 +5,8 @@ function loadLoginForm () {
         <input type="text" id="username" placeholder="username" />
         <input type="password" id="password" />
         <br/><br/><div class="bb">
-        <input type="submit" id="login_btn" value="Login"  style="width=:50px;height:20px;padding:10px;background-color:red;"/>
-        <input type="submit" id="register_btn" value="Register"    style="width=:50px;height:20px;padding:10px;background-color:red;"/>
+        <input type="submit" id="login_btn" value="Login"  style="width:50px;height:20px;padding:10px;background-color:red;"/>
+        <input type="submit" id="register_btn" value="Register"    style="width:50px;height:20px;padding:10px;background-color:red;"/>
         </div>
         <script>
        
