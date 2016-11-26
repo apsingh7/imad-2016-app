@@ -198,8 +198,9 @@ body {
 <a href="/login"><img style=" float:right; margin-left:10px;display:inline; margin-right:10px;" src="/ui/image/login_icon.png" width="45" height="45"  /></a>
 
 
-        <a href="/logout"><img style=" float:right; margin-left:10px;display:inline;margin-right:50px;" src="/ui/image/logout.png" width="45" height="45"  /></a>
-
+        
+<div id="icon">
+</div>
 
 </div>
 </div>
