@@ -68,6 +68,11 @@ function loadLoginForm () {
     var register = document.getElementById('register_btn');
     register.onclick = function () {
         // Create a request object
+         var x = document.getElementById("username").value;
+  var y = document.getElementById("password").value;
+  if(x == null || x == '') {
+    alert("Hello! I am an alert box!!");
+  }
         var request = new XMLHttpRequest();
         
         // Capture the response and store it in a variable
