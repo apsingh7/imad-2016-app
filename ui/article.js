@@ -3,7 +3,7 @@ var currentArticleTitle = window.location.pathname.split('/')[2];
 function loadCommentForm () {
     var commentFormHtml = `
         <h5>Submit a comment</h5>
-        <textarea id="comment_text" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
+        <textarea id="comment_text" rows="5" cols="100" placeholder="Please Input your Comments Here"></textarea>
         <br/>
         <input type="submit" id="submit" value="Submit" />
         <br/>
@@ -14,6 +14,12 @@ function loadCommentForm () {
     var submit = document.getElementById('submit');
     submit.onclick = function () {
         // Create a request object
+        var x = document.getElementById("comment_text").value;
+  if(x == '') {
+    alert("Blank Comments are not Allowed.!!! Input valid Comment.");
+  }
+  else
+  {
         var request = new XMLHttpRequest();
         
         // Capture the response and store it in a variable
@@ -38,7 +44,7 @@ function loadCommentForm () {
         request.send(JSON.stringify({comment: comment}));  
         submit.value = 'Submitting...';
         
-    };
+    }};
 }
 
 function loadLogin () {
