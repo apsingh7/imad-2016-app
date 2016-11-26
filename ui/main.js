@@ -13,8 +13,7 @@ function loadLoginForm () {
   var x = document.getElementById("username").value;
   var y = document.getElementById("password").value;
   if(x == null || x == '') {
-    $(".error-msg").animate({opacity: "1"}, 400);
-    return false;
+    alert("Hello! I am an alert box!!");
   }
   if(y == null || y == '') {
     $(".error-msg").animate({opacity: "1"}, 400);
