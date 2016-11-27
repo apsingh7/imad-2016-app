@@ -60,7 +60,8 @@ function loadLoginForm () {
         // Create a request object
          var x = document.getElementById("username").value;
   var y = document.getElementById("password").value;
-  if(x==''||y=''||x.indexOf(" ")!=-1||y.indexOf(" ")!=-1) {
+  if(x==='' || y==='' || x.indexOf(" ")!=-1 || y.indexOf(" ")!=-1 )
+  {
     alert("Invalid Username or Password Space is not allowed");
   }
   else
