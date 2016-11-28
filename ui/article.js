@@ -21,7 +21,7 @@ function loadCommentForm () {
             if(x.charAt(i)!=' ')
             ctr++;
         }
-  if(x ==='' || ctr!=0 ) {
+  if(x ==='' || ctr===0 ) {
     alert("Blank Comments are not Allowed.!!! Input valid Comment.");
   }
   else
