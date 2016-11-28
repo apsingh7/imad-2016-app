@@ -18,7 +18,7 @@ function loadCommentForm () {
         var i=0;
         var ctr=0;
         for(i=0;i<x.length;i++){
-            if(charAt(i)!=' ')
+            if(x.charAt(i)!=' ')
             ctr++;
         }
   if(x ==='' || ctr!=0 ) {
