@@ -5,7 +5,7 @@ function loadCommentForm () {
         <h5>Submit a comment</h5>
         <textarea id="comment_text" rows="5" cols="100" placeholder="Please Input your Comments Here"></textarea>
         <br/>
-        <input type="submit" id="submit" value="Submit" />
+        <input type="submit" id="submit" value="Submit" style="width:110px; margin-left:30px;height:50px; background-color:red;"/>
         <br/>
         `;
     document.getElementById('comment_form').innerHTML = commentFormHtml;
@@ -15,7 +15,7 @@ function loadCommentForm () {
     submit.onclick = function () {
         // Create a request object
         var x = document.getElementById("comment_text").value;
-  if(x == '') {
+  if(x ==='' || x.indexOf(" ")!=-1 ) {
     alert("Blank Comments are not Allowed.!!! Input valid Comment.");
   }
   else
@@ -84,7 +84,7 @@ function loadComments () {
                     content += `<div class="comment">
                         <pre>${escapeHTML(commentsData[i].comment)}</pre>
                         <div class="commenter">
-                            ${commentsData[i].username} - ${time.toLocaleTimeString()} on ${time.toLocaleDateString()} 
+                          by ::   ${commentsData[i].username} <br><pre>           ${time.toLocaleTimeString()} on ${time.toLocaleDateString()}</pre> 
                         </div>
                     </div>`;
                 }
