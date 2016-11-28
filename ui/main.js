@@ -98,7 +98,7 @@ function loadLoginForm () {
 
 function loadLoggedInUser (username) {
 	var iconl = document.getElementById('icon');
-	iconl.innerHTML=`<a href="/"><img style=" float:right; margin-left:10px;display:inline; margin-right:10px;" src="/ui/image/logout.png" width="45" height="45"  /></a>`;
+	iconl.innerHTML=`<a href="/logout"><img style=" float:right; margin-left:10px;display:inline; margin-right:10px;" src="/ui/image/logout.png" width="45" height="45"  /></a>`;
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
 
