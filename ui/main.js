@@ -1,7 +1,7 @@
 
 function loadLoginForm () {
     var loginHtml = `
-        <h3>Login/Register to unlock awesome features</h3>
+        <h3>Login / Register</h3>
         <input type="text" id="username" placeholder="username" />
         <input type="password" id="password" />
         <br/><br/><div class="bb">
@@ -28,7 +28,7 @@ function loadLoginForm () {
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
               if (request.status === 200) {
-                  submit.value = 'Sucess!';
+                  submit.value = 'Login';
               } else if (request.status === 403) {
                   submit.value = 'Invalid credentials. Try again?';
               } else if (request.status === 500) {
@@ -75,7 +75,7 @@ function loadLoginForm () {
               // Take some action
               if (request.status === 200) {
                   alert('User created successfully');
-                  register.value = 'Registered!';
+                  register.value = 'Register';
               } else {
                   alert('Could not register the user');
                   register.value = 'Register';
