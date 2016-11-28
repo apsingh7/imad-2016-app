@@ -5,7 +5,7 @@ function loadCommentForm () {
         <h5>Submit a comment</h5>
         <textarea id="comment_text" rows="5" cols="100" placeholder="Please Input your Comments Here"></textarea>
         <br/>
-        <input type="submit" id="submit" value="Submit" style="width:110px; margin-left:30px;height:50px; background-color:red;"/>
+        <input type="submit" id="submit" value="Submit" style="width:110px; margin-top:30px;height:50px; background-color:#a0909e;"/>
         <br/>
         `;
     document.getElementById('comment_form').innerHTML = commentFormHtml;
@@ -15,7 +15,13 @@ function loadCommentForm () {
     submit.onclick = function () {
         // Create a request object
         var x = document.getElementById("comment_text").value;
-  if(x ==='' || x.indexOf(" ")!=-1 ) {
+        var i=0;
+        var ctr=0;
+        for(i=0;i<x.length;i++){
+            if(charAt(i)!=' ')
+            ctr++;
+        }
+  if(x ==='' || ctr===0 ) {
     alert("Blank Comments are not Allowed.!!! Input valid Comment.");
   }
   else
