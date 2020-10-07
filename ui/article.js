@@ -8,8 +8,7 @@ function loadCommentForm () {
         <input type="submit" id="submit" value="Submit" style="width:110px; margin-top:30px;height:50px; background-color:#a0909e;"/>
         <br/>
         `;
-    document.getElementById('comment_form').innerHTML = commentFormHtml;
-    
+    document.getElementById('comment_form').innerHTML = commentFormHtml;   
     // Submit username/password to login
     var submit = document.getElementById('submit');
     submit.onclick = function () {
